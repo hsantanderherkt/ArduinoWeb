@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'index',
     'widget_tweaks',
+    'serial',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +132,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SERIAL_PORT = {
+    'port': 'COM3',
+    'baudrate': 9600,
+    'timeout': 1,
+    # Otras opciones de configuración
+}
